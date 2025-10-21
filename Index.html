@@ -6,33 +6,38 @@
   <title>Turismo Itagüí</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg" style="background-color: #0AC6A1; font-family: 'Roboto', sans-serif;">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="#">
+     
+      <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="">
         <img src="logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top me-3">
-        <span class="display-4 lh-1 fw-bolder">Turismo&nbsp;Itagüí</span>
+        <span class="display-6 lh-1 fw-bolder">Turismo&nbsp;Itagüí</span>
       </a>
-    </div>
 
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav" style="font-family: 'Ultra', serif; font-size: 1.2rem; letter-spacing: 2px;">
-          <a class="nav-link text-white mx-3 fw-semibold" href="educacion.html">EDUCACIÓN</a>
-          <a class="nav-link text-white mx-3 fw-semibold" href="#">CULTURA</a>
-          <a class="nav-link text-white mx-3 fw-semibold" href="#">GASTRONOMÍA</a>
+   
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+ 
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto" style="font-family: 'Ultra', serif; font-size: 1.1rem; letter-spacing: 2px;">
+          <a class="nav-link text-white mx-2 fw-semibold" href="educacion.html">EDUCACIÓN</a>
+          <a class="nav-link text-white mx-2 fw-semibold" href="#">CULTURA</a>
+          <a class="nav-link text-white mx-2 fw-semibold" href="#">GASTRONOMÍA</a>
+          <a class="nav-link text-white mx-2 fw-semibold" href="#">NOSOTROS</a>
         </div>
-      </div>
-    </div>
 
-    <div class="container-fluid">
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 rounded-pill shadow-sm" type="search" placeholder="Search" aria-label="Search">
+    <form class="d-flex ms-auto me-3" role="search">
+        <input class="form-control me-2 rounded-pill shadow-sm" type="search" placeholder="Buscar" aria-label="Buscar">
         <button class="btn btn-outline-light rounded-pill px-4 fw-semibold" type="submit">Buscar</button>
       </form>
+      </div>
     </div>
   </nav>
 
@@ -44,10 +49,30 @@
     <p class="lead text-secondary mb-4 fst-italic">
       Descubre lo mejor de nuestra ciudad.
     </p>
-    <!-- Imagen sin cuadro de fondo -->
-   <img src="fondo.png" class="img-fluid rounded-4 shadow-lg mt-3 w-100 mx-auto d-block border border-4 border-success" alt="Paisaje de Itagüí">
-
+ 
+    <img src="./fotos/fondo.png" class="img-fluid rounded-4 shadow-lg mt-3 w-100 mx-auto d-block border border-4 border-success" alt="Paisaje de Itagüí">
   </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-dark w-100 m-0" style="background-color: #0AC6A1; padding-top: 40px; padding-bottom: 100px;">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center mb-4 g-3">
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">@alcaldiadeitagui</a></div>
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">@Alcaldiaitagui</a></div>
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">@Alcaldialtagui</a></div>
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">@alcaldiadeitagui</a></div>
+      </div>
+
+      <div class="row justify-content-center g-4">
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">Mapa del Sitio</a></div>
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">Políticas</a></div>
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">Mecanismos de Contacto</a></div>
+        <div class="col-auto"><a href="#" class="text-dark text-decoration-underline">Estadísticas</a></div>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
