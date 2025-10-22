@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body class="bg-light" style="padding-top: 140px;">
+<body class="bg-light">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg" style="background-color: #0AC6A1; font-family: 'Roboto', sans-serif;">
@@ -19,7 +19,7 @@
         <span class="display-6 lh-1 fw-bolder">Turismo&nbsp;Itagüí</span>
       </a>
 
-
+   
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,53 +33,72 @@
           <a class="nav-link text-white mx-2 fw-semibold" href="#">NOSOTROS</a>
         </div>
 
-        <form class="d-flex ms-auto me-3" role="search">
-          <input class="form-control me-2 rounded-pill shadow-sm" type="search" placeholder="Buscar" aria-label="Buscar">
-          <button class="btn btn-outline-light rounded-pill px-4 fw-semibold" type="submit">Buscar</button>
-        </form>
+    <form class="d-flex ms-auto me-3" role="search">
+        <input class="form-control me-2 rounded-pill shadow-sm" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-light rounded-pill px-4 fw-semibold" type="submit">Buscar</button>
+      </form>
       </div>
     </div>
   </nav>
+<div class="container mt-5 pt-3">
+  <div class="container py-5 mt-5" style="margin-top: 120px !important;">
+    <h2 class="fw-bold mb-4 text-success text-uppercase display-5 text-start" style="font-family: 'Ultra', serif;">
+      FESTIVIDADES
+    </h2>
+  </div>
 
-  <!-- CONTENIDO -->
-  <div class="container my-5 py-5" style="margin-top: 100px;">
-    <div class="row align-items-center justify-content-center gy-5">
+  <div class="row align-items-start">
+    <!-- Texto a la izquierda -->
+    <div class="col-md-6">
+      <p class="mb-1">
+        Itagüí celebra con alegría y tradición a través de diversas festividades populares y culturales. 
+        Entre las más destacadas están las Fiestas de la Industria, el Comercio y la Cultura, 
+        que reúnen conciertos, muestras artísticas, gastronomía y emprendimiento local. 
+        También se celebra la Semana Santa en el corregimiento El Manzanillo, 
+        con gran valor religioso y patrimonial, y festivales como Itagüí Vive la Música e Itagüí en Danza, 
+        que fortalecen el talento local y la participación ciudadana.
+      </p>
+    </div>
 
-      <div class="col-12 col-md-6">
-        <div class="container py-5 mt-5" style="margin-top: 120px !important;">
-        <h2 class="fw-bold mb-4 text-success text-uppercase display-5 text-start" style="font-family: 'Ultra', serif;">
-        EDUCACIÓN
-       </h2>
-          <p class="mt-3 text-justify">
-            Itagüí se ha posicionado como un referente educativo en Antioquia gracias a su cobertura gratuita desde jardín hasta educación superior, en alianza con el SENA y la Universidad Digital. Cuenta con más de 24 instituciones oficiales, muchas con infraestructura renovada, laboratorios, aulas TIC, bibliotecas y espacios accesibles. Con programas como jornada única, alimentación escolar y kits estudiantiles, el municipio ha reducido la deserción al 1,1 % y ha logrado altos puntajes en las pruebas Saber 11, destacando varias instituciones entre las mejores del departamento.
-          </p>
-        </div>
-      </div>
+    <!-- Dos imágenes a la derecha del texto -->
+    <div class="col-md-6 d-flex flex-column align-items-center justify-content-start gap-3">
+      <img src="fotos/casa.png" class="img-fluid rounded shadow-sm" style="width: 90%; height: auto;">
+      <img src="fotos/Libro.png" class="img-fluid rounded shadow-sm" style="width: 90%; height: auto;">
+    </div>
+  </div>
 
-      <div class="col-12 col-md-6 position-relative">
-        <div class="p-3 bg-light rounded shadow-sm">
-          <div class="card border-0 shadow-sm" style="background-color: #BFF5E3;">
-            <img src="fotos/educacion.jpg" class="card-img-top rounded-4 img-fluid" alt="Educación">
-            <div class="card-body text-center">
-              <p class="card-text text-black fst-italic fw-semibold mb-0">
-                "En Itagüí, la educación transforma vidas y construye futuro."
-              </p>
-            </div>
-          </div>
-        </div>
-<!-- Botón con la flecha -->
-<div class="position-absolute top-50 translate-middle-y" style="right: -60px;">
-  <a href="bibliotecas.html">
+  <!-- Dos imágenes debajo del texto -->
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-3 col-sm-6">
+      <img src="fotos/guarda.png" class="img-fluid rounded shadow-sm" alt="Imagen 3">
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <img src="fotos/libreria.png" class="img-fluid rounded shadow-sm" alt="Imagen 4">
+    </div>
+  </div>
+</div>
+
+<!-- Flecha izquierda -->
+<div class="position-absolute" style="top: 65%; left: 30px; transform: translateY(-50%);">
+  <a href="cultura.html">
+    <i class="bi bi-arrow-left-circle-fill"
+       style="font-size: 3rem; cursor: pointer; color: gray; transition: color 0.3s;"
+       onmouseover="this.style.color='#0CC9A3';"
+       onmouseout="this.style.color='gray';"></i>
+  </a>
+</div>
+
+<!-- Flecha derecha -->
+<div class="position-absolute" style="top: 65%; right: 30px; transform: translateY(-50%);">
+  <a href="desarrollo personal.html">
     <i class="bi bi-arrow-right-circle-fill"
        style="font-size: 3rem; cursor: pointer; color: gray; transition: color 0.3s;"
        onmouseover="this.style.color='#0CC9A3';"
        onmouseout="this.style.color='gray';"></i>
   </a>
 </div>
-      </div>
-    </div>
-  </div>
- <!-- FOOTER -->
+
+<!-- FOOTER -->
 <footer class="text-center text-white py-4 mt-5" style="background-color: #0AC6A1;">
   <div class="container">
     <div class="mb-3">
@@ -96,7 +115,4 @@
     </div>
   </div>
 </footer>
- 
 
-</body>
-</html>
