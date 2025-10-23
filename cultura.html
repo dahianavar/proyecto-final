@@ -5,35 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Turismo Itagüí</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Ultra&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body class="bg-light" style="padding-top: 140px;">
+
+<body class="bg-light" style="font-family: 'Roboto', sans-serif;">
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg" style="background-color: #0AC6A1; font-family: 'Roboto', sans-serif;">
-    <div class="container-fluid">
-     
-      <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="Index.html">
-        <img src="logo.png" alt="Logo" width="80" height="80" class="d-inline-block align-text-top me-3">
-        <span class="display-6 lh-1 fw-bolder">Turismo&nbsp;Itagüí</span>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg" style="background-color: #0AC6A1;">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="Logo" width="75" height="75" class="me-2">
+        <span class="fs-3 lh-1">Turismo&nbsp;Itagüí</span>
       </a>
 
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
 
- 
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
-        <div class="navbar-nav mx-auto" style="font-family: 'Ultra', serif; font-size: 1.1rem; letter-spacing: 2px;">
-          <a class="nav-link text-white mx-2 fw-semibold" href="educacion.html">EDUCACIÓN</a>
-          <a class="nav-link text-white mx-2 fw-semibold" href="cultura.html">CULTURA</a>
-          <a class="nav-link text-white mx-2 fw-semibold" href="#">GASTRONOMÍA</a>
-          <a class="nav-link text-white mx-2 fw-semibold" href="#">NOSOTROS</a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="educacion.html">EDUCACIÓN</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="cultura.html">CULTURA</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="gastronomia.html">GASTRONOMÍA</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="nosotros.html">NOSOTROS</a></li>
+        </ul>
 
-        <form class="d-flex ms-auto me-3" role="search">
+        <form class="d-flex mt-3 mt-lg-0 ms-lg-3" role="search">
           <input class="form-control me-2 rounded-pill shadow-sm" type="search" placeholder="Buscar" aria-label="Buscar">
           <button class="btn btn-outline-light rounded-pill px-4 fw-semibold" type="submit">Buscar</button>
         </form>
@@ -41,65 +39,106 @@
     </div>
   </nav>
 
-  <!-- CONTENIDO -->
-  <div class="container my-5 py-5" style="margin-top: 100px;">
+  <!-- SECCIÓN PRINCIPAL CULTURA -->
+  <div class="container py-5 mt-5">
     <div class="row align-items-center justify-content-center gy-5">
-
+      
       <div class="col-12 col-md-6">
-        <div class="container py-5 mt-5" style="margin-top: 120px !important;">
-        <h2 class="fw-bold mb-4 text-success text-uppercase display-5 text-start" style="font-family: 'Ultra', serif;">
-        CULTURA
-       </h2>
-          <p class="mt-3 text-justify">
-        La cultura en Itagüí es un pilar fundamental para la identidad y el desarrollo social del municipio. Se manifiesta en una amplia oferta de actividades artísticas como música, danza, teatro y arte visual, así como en festivales tradicionales
-        que celebran las raíces y la diversidad de su gente. Espacios como la Biblioteca Diego Echavarría Misas y el Museo Graciliano Arcila Vélez fomentan la lectura, el arte y la memoria histórica. Además, el municipio impulsa procesos culturales 
-        comunitarios, talleres formativos y apoyo a artistas locales, promoviendo la inclusión, la creatividad y la participación ciudadana.
-
-          </p>
-        </div>
+        <h2 class="fw-bold mb-4 text-uppercase display-5" style="color: #E57C23; font-family: 'Ultra', serif;">
+          Cultura Viva de Itagüí
+        </h2>
+        <p class="lead text-dark text-justify mb-4">
+          La cultura en Itagüí es un reflejo vibrante de su gente: diversa, alegre y creativa. Cada rincón del municipio vibra con el sonido de la música, el color de sus murales, el movimiento de la danza y las historias que nacen en los barrios.
+        </p>
+        <p class="text-muted">
+          En espacios como la <strong>Biblioteca Diego Echavarría Misas</strong> y el <strong>Museo Graciliano Arcila Vélez</strong>, se promueve la lectura, el arte y la identidad local. Los festivales, ferias y muestras culturales son una invitación a celebrar nuestra diversidad y fortalecer el sentido de comunidad.
+        </p>
+        <a href="festividades.html" class="btn rounded-pill px-4 py-2 fw-semibold shadow-sm border-0 text-white"
+          style="background: linear-gradient(90deg, #FF914D 0%, #FFC764 100%);">
+          Explorar Festividades <i class="bi bi-arrow-right-circle ms-2"></i>
+        </a>
       </div>
 
-      <div class="col-12 col-md-6 position-relative">
-        <div class="p-3 bg-light rounded shadow-sm">
-          <div class="card border-0 shadow-sm" style="background-color: #BFF5E3;">
-            <img src="fotos/cultura.png" class="card-img-top rounded-4 img-fluid" alt="Educación">
-            <div class="card-body text-center">
-              <p class="card-text text-black fst-italic fw-semibold mb-0">
-                "En Itagüí, la cultura florece como expresión viva de nuestra identidad y unión."
-              </p>
-            </div>
+      <div class="col-12 col-md-6 text-center">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="background: #FFF3E2;">
+          <img src="fotos/cultura.png" class="card-img-top rounded-0" alt="Cultura Itagüí">
+          <div class="card-body">
+            <p class="card-text text-dark fst-italic fw-semibold">
+              “En Itagüí, la cultura florece como expresión viva de nuestra identidad y unión.”
+            </p>
           </div>
         </div>
-<!-- Botón con la flecha -->
-<div class="position-absolute top-50 translate-middle-y" style="right: -60px;">
-  <a href="festividades.html">
-    <i class="bi bi-arrow-right-circle-fill"
-       style="font-size: 3rem; cursor: pointer; color: gray; transition: color 0.3s;"
-       onmouseover="this.style.color='#0CC9A3';"
-       onmouseout="this.style.color='gray';"></i>
-  </a>
-</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECCIÓN EXTRA: MUESTRA CULTURAL -->
+  <div class="container text-center py-5">
+    <h3 class="fw-bold text-uppercase mb-5" style="color: #0AC6A1; font-family: 'Ultra', serif;">
+      Muestra Cultural Destacada
+    </h3>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 rounded-4" style="background-color: #E9FFF8;">
+          <div class="card-body">
+            <i class="bi bi-brush display-4 text-warning mb-3"></i>
+            <h5 class="fw-bold">Murales Urbanos</h5>
+            <p class="text-muted">Expresiones artísticas que transforman espacios públicos en galerías al aire libre llenas de color y significado.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 rounded-4" style="background-color: #FFF7E6;">
+          <div class="card-body">
+            <i class="bi bi-music-note-beamed display-4 text-danger mb-3"></i>
+            <h5 class="fw-bold">Festival del Ritmo</h5>
+            <p class="text-muted">Evento que celebra la música y danza local, destacando artistas emergentes y tradiciones musicales de Itagüí.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 rounded-4" style="background-color: #E2F4FF;">
+          <div class="card-body">
+            <i class="bi bi-palette-fill display-4 text-primary mb-3"></i>
+            <h5 class="fw-bold">Arte Comunitario</h5>
+            <p class="text-muted">Talleres y actividades que promueven la creatividad, la inclusión y el desarrollo cultural en los barrios.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
- <!-- FOOTER -->
-<footer class="text-center text-white py-4 mt-5" style="background-color: #0AC6A1;">
-  <div class="container">
-    <div class="mb-3">
-      <a href="#" class="text-white mx-3">@alcaldiadeitagui</a>
-      <a href="#" class="text-white mx-3">@Alcaldiaitagui</a>
-      <a href="#" class="text-white mx-3">@Alcaldialtagui</a>
-      <a href="#" class="text-white mx-3">@alcaldiadeitagui</a>
+  <section class="py-5 text-center text-white" style="background-color: #0AC6A1;">
+    <div class="container">
+      <blockquote class="blockquote">
+        <p class="mb-4 fs-4 fst-italic">"Itagüí: donde cada rincón cuenta una historia, y cada historia inspira a descubrir más."</p>
+        <footer class="blockquote-footer text-white-50">Turismo Itagüí</footer>
+      </blockquote>
     </div>
-    <div>
-      <a href="#" class="text-white mx-3">Mapa del Sitio</a>
-      <a href="#" class="text-white mx-3">Políticas</a>
-      <a href="#" class="text-white mx-3">Mecanismos de Contacto</a>
-      <a href="#" class="text-white mx-3">Estadísticas</a>
-    </div>
-  </div>
-</footer>
- 
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="text-center text-white py-4 mt-auto" style="background-color: #0AC6A1;">
+    <div class="container">
+      <div class="mb-3">
+        <a href="#" class="text-white mx-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white mx-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white mx-3"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-white mx-3"><i class="bi bi-youtube"></i></a>
+      </div>
+      <div class="text-white-50">
+        <a href="#" class="text-white-50 mx-2 text-decoration-none">Mapa del Sitio</a> |
+        <a href="#" class="text-white-50 mx-2 text-decoration-none">Políticas</a> |
+        <a href="#" class="text-white-50 mx-2 text-decoration-none">Mecanismos de Contacto</a> |
+        <a href="#" class="text-white-50 mx-2 text-decoration-none">Estadísticas</a>
+      </div>
+      <p class="mt-3 mb-0 fw-bold">© 2025 Turismo Itagüí</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
