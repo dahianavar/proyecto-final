@@ -10,14 +10,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body class="bg-light" style="font-family: 'Roboto', sans-serif;">
+<body class="bg-light d-flex flex-column min-vh-100" style="font-family: 'Roboto', sans-serif;">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg" style="background-color: #0AC6A1;">
     <div class="container">
       <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="../Index.html">
         <img src="../logo.png" alt="Logo" width="75" height="75" class="me-2">
-        <span class="fs-3 lh-1">&nbsp;Itatur</span>
+        <span class="fs-3 lh-1">Turismo&nbsp;Itagüí</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -40,103 +40,125 @@
     </div>
   </nav>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <div class="container py-5 mt-5">
-    <div class="text-center mb-5">
-      <div class="d-inline-block px-4 py-2 bg-success bg-opacity-25 rounded shadow-sm">
-        <h2 class="fw-bold m-0" style="color:#000;">TEATROS</h2>
+  <!-- CONTENIDO -->
+  <main class="flex-grow-1">
+    <div class="container mt-5 pt-3">
+      <div class="container py-5 mt-5" style="margin-top: 120px !important;">
+        <h2 class="fw-bold mb-4 text-success text-uppercase display-5 text-start" style="font-family: 'Ultra', serif;">TEATROS</h2>
       </div>
+
+      <div class="row align-items-start">
+        <div class="col-md-6">
+
+          <div class="mb-4">
+            <p class="mb-1">Itagüí cuenta con varios teatros que contribuyen a la escena cultural de la ciudad. Estos teatros ofrecen una variedad de espectáculos y eventos para la comunidad.</p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">Teatro Caribe:</h6>
+            <p class="mb-1">Este teatro ha sido revitalizado y ofrece proyecciones de películas gratuitas todos los miércoles.</p>
+            <p class="mb-0"><i class="bi bi-link-45deg"></i>
+              <a href="https://maps.app.goo.gl/zSPQpaK7MPwu6vGZ9" target="_blank" class="link-success text-decoration-none">ubicación</a>
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">Teatro Auditorio del Sur:</h6>
+            <p class="mb-1">Complementa la infraestructura cultural del municipio de Itagüí, sirviendo a la zona sur. Es un espacio multifuncional destinado a promover las artes escénicas, la música y otras expresiones culturales.</p>
+            <p class="mb-0"><i class="bi bi-link-45deg"></i>
+              <a href="https://maps.app.goo.gl/k4YJQ9wGouzVvEATA" target="_blank" class="link-success text-decoration-none">ubicación.</a>
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">Teatro Norte:</h6>
+            <p class="mb-1">Sirve como un punto de encuentro para la comunidad, albergando una variedad de eventos que incluyen presentaciones de teatro, danza, conciertos, exposiciones y talleres.</p>
+            <p class="mb-0"><i class="bi bi-link-45deg"></i>
+              <a href="https://maps.app.goo.gl/cEUJJW1fqAFBXVwv6" target="_blank" class="link-success text-decoration-none">ubicación.</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Imágenes con efecto -->
+        <div class="col-md-6 d-flex flex-wrap justify-content-center gap-4">
+          <div class="text-center">
+            <p class="fw-semibold mb-1">Teatro Caribe</p>
+            <img src="../fotos/teatro1.png" alt="Teatro Caribe"
+              class="img-fluid rounded shadow-lg"
+              style="width: 270px; transition: transform 0.5s, box-shadow 0.5s;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px #0AC6A1';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.3)';">
+          </div>
+          <div class="text-center">
+            <p class="fw-semibold mb-1">Teatro Auditorio del Sur</p>
+            <img src="../fotos/teatro2.png" alt="Teatro Auditorio del Sur"
+              class="img-fluid rounded shadow-lg"
+              style="width: 270px; transition: transform 0.5s, box-shadow 0.5s;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px #0AC6A1';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.3)';">
+          </div>
+          <div class="text-center w-100 mt-3">
+            <p class="fw-semibold mb-1">Teatro Norte</p>
+            <img src="../fotos/teatro3.png" alt="Teatro Norte"
+              class="img-fluid rounded shadow-lg"
+              style="width: 380px; transition: transform 0.5s, box-shadow 0.5s;"
+              onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px #0AC6A1';"
+              onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.3)';">
+          </div>
+        </div>
+
+    <div class="position-absolute" style="top: 65%; left: 30px; transform: translateY(-50%);">
+      <a href="museos.html">
+        <i class="bi bi-arrow-left-circle-fill"
+           style="font-size: 3rem; cursor: pointer; color: gray; transition: color 0.3s;"
+           onmouseover="this.style.color='#0CC9A3';"
+           onmouseout="this.style.color='gray';"></i>
+      </a>
     </div>
 
-    <div class="row align-items-start">
-      <!-- Texto informativo -->
-      <div class="col-md-6">
-        <p>Itagüí cuenta con varios teatros que contribuyen a la escena cultural de la ciudad.
-          Estos teatros ofrecen una variedad de espectáculos y eventos para la comunidad.</p>
 
-        <p><strong>Teatro Caribe:</strong><br>
-          Este teatro ha sido revitalizado y ofrece proyecciones de películas gratuitas todos los miércoles.<br>
-          👉 <a href="https://www.google.com/maps?q=Teatro+Caribe+Itagüí" target="_blank">Ver Teatro Caribe en Google Maps</a>
-        </p>
-
-        <p><strong>Teatro Auditorio del Sur:</strong><br>
-          Teatro y auditorio público en Itagüí.<br>
-          👉 <a href="https://www.google.com/maps?q=Teatro+Auditorio+del+Sur+Itagüí" target="_blank">Ver Teatro Auditorio del Sur en Google Maps</a>
-        </p>
-
-        <p><strong>Teatro Norte:</strong><br>
-          Otro teatro ubicado en Itagüí.<br>
-          👉 <a href="https://www.google.com/maps?q=Teatro+Norte+Itagüí" target="_blank">Ver Teatro Norte en Google Maps</a>
-        </p>
-      </div>
-
-      <!-- Imágenes -->
-      <div class="col-md-6 d-flex flex-wrap justify-content-center gap-4">
-        <div class="text-center">
-          <p class="fw-semibold mb-1">Teatro Caribe</p>
-          <img src="../fotos/teatro1.png" alt="Teatro Caribe" class="img-fluid rounded shadow-lg" style="width: 270px;">
-        </div>
-        <div class="text-center">
-          <p class="fw-semibold mb-1">Teatro Auditorio del Sur</p>
-          <img src="../fotos/teatro2.png" alt="Teatro Auditorio del Sur" class="img-fluid rounded shadow-lg" style="width: 270px;">
-        </div>
-        <div class="text-center w-100 mt-3">
-          <p class="fw-semibold mb-1">Teatro Norte</p>
-          <img src="../fotos/teatro3.png" alt="Teatro Norte" class="img-fluid rounded shadow-lg" style="width: 380px;">
-        </div>
-      </div>
+  <div class="position-fixed bottom-0 end-0 m-4">
+    <div class="bg-success rounded-circle d-flex justify-content-center align-items-center shadow"
+      style="width:55px; height:55px;">
+      <i class="bi bi-mortarboard-fill text-white fs-3"></i>
     </div>
   </div>
 
-  <!-- SECCIÓN DECORATIVA + FOOTER (UNIDOS DE LADO A LADO) -->
-  <section class="text-center text-white py-5" style="background: linear-gradient(135deg, #0AC6A1 0%);">
+
+  <section class="py-5 text-center text-white" style="background-color: #0AC6A1;">
     <div class="container">
-      <blockquote class="blockquote mb-4">
-        <p class="fs-4 fst-italic mb-3">"Itagüí: donde cada rincón cuenta una historia, y cada historia inspira a descubrir más."</p>
+      <blockquote class="blockquote">
+        <p class="mb-4 fs-4 fst-italic">"Itagüí: donde cada rincón cuenta una historia, y cada historia inspira a
+          descubrir más."</p>
         <footer class="blockquote-footer text-white-50">Turismo Itagüí</footer>
       </blockquote>
-      <hr class="border-white opacity-50 w-75 mx-auto mb-5">
-
-      <div class="row text-white align-items-center">
-        <!-- Columna redes -->
-        <div class="col-md-4 mb-3 mb-md-0">
-          <h5 class="fw-bold mb-3">Síguenos</h5>
-          <a href="https://www.facebook.com/alcaldiaitagui" class="text-white mx-2"><i class="bi bi-facebook fs-4"></i></a>
-          <a href="https://www.instagram.com/alcaldiadeitagui/" class="text-white mx-2"><i class="bi bi-instagram fs-4"></i></a>
-          <a href="https://x.com/AlcaldiaItagui" class="text-white mx-2"><i class="bi bi-twitter-x fs-4"></i></a>
-          <a href="https://www.youtube.com/@alcaldiaitagui1" class="text-white mx-2"><i class="bi bi-youtube fs-4"></i></a>
-        </div>
-
-        <!-- Columna central -->
-        <div class="col-md-4 mb-3 mb-md-0">
-          <p class="fw-semibold mb-1">© 2025 Turismo Itagüí</p>
-          <p class="text-white-50 mb-0">Descubre, aprende y disfruta tu ciudad</p>
-        </div>
-
-        <!-- Columna enlaces -->
-        <div class="col-md-4">
-          <a href="https://itagui.gov.co/sitio/mapa_del_sitio" class="text-white-50 text-decoration-none d-block">Mapa del Sitio</a>
-          <a href="https://itagui.gov.co/sitio/politicas" class="text-white-50 text-decoration-none d-block">Políticas</a>
-          <a href="https://itagui.gov.co/sitio/mecanismos_contacto" class="text-white-50 text-decoration-none d-block">Mecanismos de Contacto</a>
-          <a href="https://itagui.gov.co/sitio/estadisticas" class="text-white-50 text-decoration-none d-block">Estadísticas</a>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- BOTONES DECORATIVOS -->
-  <div class="position-fixed bottom-0 start-0 m-3">
-    <a href="index.html" class="btn btn-light border rounded-circle shadow-sm">
-      <i class="bi bi-arrow-left fs-4 text-secondary"></i>
-    </a>
-  </div>
-
-  <div class="position-fixed bottom-0 end-0 m-3">
-    <button class="btn btn-success rounded-circle p-3 shadow-sm">
-      <i class="bi bi-x-lg text-dark fs-4"></i>
-    </button>
-  </div>
+  <!-- FOOTER -->
+  <footer class="text-center text-white py-4 mt-auto" style="background-color: #0AC6A1;">
+    <div class="container">
+      <div class="mb-3">
+        <a href="https://www.facebook.com/alcaldiaitagui" class="text-white mx-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/alcaldiadeitagui/" class="text-white mx-3"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://x.com/AlcaldiaItagui" class="text-white mx-3"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.youtube.com/@alcaldiaitagui1" class="text-white mx-3"><i class="bi bi-youtube"></i></a>
+      </div>
+      <div class="text-white-50">
+        <a href="https://itagui.gov.co/sitio/mapa_del_sitio" class="text-white-50 mx-2 text-decoration-none">Mapa del
+          Sitio</a> |
+        <a href="https://itagui.gov.co/sitio/politicas" class="text-white-50 mx-2 text-decoration-none">Políticas</a> |
+        <a href="https://itagui.gov.co/sitio/mecanismos_contacto"
+          class="text-white-50 mx-2 text-decoration-none">Mecanismos de Contacto</a> |
+        <a href="https://itagui.gov.co/sitio/estadisticas"
+          class="text-white-50 mx-2 text-decoration-none">Estadísticas</a>
+      </div>
+      <p class="mt-3 mb-0 fw-bold">© 2025 Turismo Itagüí</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

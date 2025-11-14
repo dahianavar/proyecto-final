@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mapa Leaflet - Página completa</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        #map {
+            height: 80vh; /* Ajuste para que el mapa no tape el footer */
+            width: 100%;
+            display: block;
+            margin-top: 100px; /* Para no tapar navbar */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg" style="background-color: #0AC6A1;">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Logo" width="75" height="75" class="me-2">
+                <span class="fs-3 lh-1">Itatur&nbsp;</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav text-center align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="educacion.html">EDUCACIÓN</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="cultura.html">CULTURA</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="gastronomia.html">GASTRONOMÍA</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="nosotros.html">NOSOTROS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAPA -->
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <script>
+        const map = L.map('map').setView([6.1848, -75.5994], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; OpenStreetMap'
+        }).addTo(map);
+
+        // Marcador central
+        L.marker([6.1848, -75.5994]).addTo(map)
+            .bindPopup('Itagüí, Antioquia<br>Centro del mapa.')
+            .openPopup();
+
+        L.control.scale().addTo(map);
+
+        /* ----- LUGARES ----- */
+
+        // CULTURA
+        L.marker([6.1756, -75.6115]).addTo(map).bindPopup('<b>Parque Principal</b>');
+        L.marker([6.1842, -75.6019]).addTo(map).bindPopup('<b>Casa de la Cultura</b>');
+        L.marker([6.1729, -75.6110]).addTo(map).bindPopup('<b>Museo de Artes</b>');
+
+        // GASTRONOMÍA
+        L.marker([6.1814, -75.5992]).addTo(map).bindPopup('<b>Zona Centro</b>');
+        L.marker([6.1753, -75.6118]).addTo(map).bindPopup('<b>Mercado Municipal</b>');
+        L.marker([6.1881, -75.5931]).addTo(map).bindPopup('<b>Sector Santa María</b>');
+
+        // EDUCACIÓN
+        L.marker([6.1904, -75.5948]).addTo(map).bindPopup('<b>I.E. Simón Bolívar</b>');
+        L.marker([6.1788, -75.6041]).addTo(map).bindPopup('<b>I.E. Avelino Saldarriaga</b>');
+        L.marker([6.1769, -75.6089]).addTo(map).bindPopup('<b>I.E. Diego Echavarría M.</b>');
+    </script>
+
+    <!-- FRASE -->
+    <section class="py-5 text-center text-white" style="background-color: #0AC6A1;">
+        <div class="container">
+            <blockquote class="blockquote">
+                <p class="mb-4 fs-4 fst-italic">
+                    "Itagüí: donde cada rincón cuenta una historia, y cada historia inspira a descubrir más."
+                </p>
+                <footer class="blockquote-footer text-white-50">Turismo Itagüí</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-white py-4" style="background-color: #0AC6A1;">
+        <div class="container">
+            <p class="mt-3 mb-0 fw-bold">© 2025 Turismo Itagüí</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
