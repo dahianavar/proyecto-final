@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Ultra&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 
 <body class="bg-light d-flex flex-column min-vh-100" style="font-family: 'Roboto', sans-serif;">
@@ -17,7 +18,7 @@
     <div class="container">
       <a class="navbar-brand fw-bold text-uppercase d-flex align-items-center" href="../Index.html">
         <img src="../logo.png" alt="Logo" width="75" height="75" class="me-2">
-        <span class="fs-3 lh-1">Turismo&nbsp;Itagüí</span>
+        <span class="fs-3 lh-1">ITATUR&nbsp;</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -26,10 +27,10 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="menu">
         <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="educacion.html">EDUCACIÓN</a></li>
-          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="cultura.html">CULTURA</a></li>
-          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="gastronomia.html">GASTRONOMÍA</a></li>
-          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="nosotros.html">NOSOTROS</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="../educacion.html">EDUCACIÓN</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="../cultura.html">CULTURA</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="../gastronomia.html">GASTRONOMÍA</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold mx-2" href="../nosotros.html">NOSOTROS</a></li>
         </ul>
 
         <form class="d-flex mt-3 mt-lg-0 ms-lg-3" role="search">
@@ -89,6 +90,7 @@
               onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px #0AC6A1';"
               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.3)';">
           </div>
+
           <div class="text-center">
             <p class="fw-semibold mb-1">Teatro Auditorio del Sur</p>
             <img src="../fotos/teatro2.png" alt="Teatro Auditorio del Sur"
@@ -97,6 +99,7 @@
               onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 25px #0AC6A1';"
               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 10px rgba(0,0,0,0.3)';">
           </div>
+
           <div class="text-center w-100 mt-3">
             <p class="fw-semibold mb-1">Teatro Norte</p>
             <img src="../fotos/teatro3.png" alt="Teatro Norte"
@@ -107,56 +110,58 @@
           </div>
         </div>
 
-    <div class="position-absolute" style="top: 65%; left: 30px; transform: translateY(-50%);">
-      <a href="museos.html">
-        <i class="bi bi-arrow-left-circle-fill"
-           style="font-size: 3rem; cursor: pointer; color: gray; transition: color 0.3s;"
-           onmouseover="this.style.color='#0CC9A3';"
-           onmouseout="this.style.color='gray';"></i>
-      </a>
+        <div class="position-absolute" style="top: 65%; left: 30px; transform: translateY(-50%);">
+          <a href="museos.html">
+            <i class="bi bi-arrow-left-circle-fill"
+              style="font-size: 3rem; cursor: pointer; color: gray; transition: color 0.3s;"
+              onmouseover="this.style.color='#0CC9A3';"
+              onmouseout="this.style.color='gray';"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-
-  <div class="position-fixed bottom-0 end-0 m-4">
-    <div class="bg-success rounded-circle d-flex justify-content-center align-items-center shadow"
-      style="width:55px; height:55px;">
-      <i class="bi bi-mortarboard-fill text-white fs-3"></i>
+    <!-- ÍCONO FLOTANTE -->
+    <div class="position-fixed bottom-0 end-0 m-4">
+      <div class="bg-success rounded-circle d-flex justify-content-center align-items-center shadow"
+        style="width:55px; height:55px;">
+        <i class="bi bi-mortarboard-fill text-white fs-3"></i>
+      </div>
     </div>
-  </div>
 
+  </main>
 
-  <section class="py-5 text-center text-white" style="background-color: #0AC6A1;">
+  <!-- ❗FRASE + FOOTER UNIDOS EN UN SOLO BLOQUE -->
+  <footer class="text-center text-white py-5 mt-auto" style="background-color: #0AC6A1; width: 100%;">
     <div class="container">
-      <blockquote class="blockquote">
-        <p class="mb-4 fs-4 fst-italic">"Itagüí: donde cada rincón cuenta una historia, y cada historia inspira a
-          descubrir más."</p>
+
+      <!-- FRASE -->
+      <blockquote class="blockquote mb-4">
+        <p class="mb-4 fs-4 fst-italic">"Itagüí: donde cada rincón cuenta una historia, y cada historia inspira a descubrir más."</p>
         <footer class="blockquote-footer text-white-50">Turismo Itagüí</footer>
       </blockquote>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="text-center text-white py-4 mt-auto" style="background-color: #0AC6A1;">
-    <div class="container">
+      <!-- REDES -->
       <div class="mb-3">
         <a href="https://www.facebook.com/alcaldiaitagui" class="text-white mx-3"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/alcaldiadeitagui/" class="text-white mx-3"><i
-            class="bi bi-instagram"></i></a>
+        <a href="https://www.instagram.com/alcaldiadeitagui/" class="text-white mx-3"><i class="bi bi-instagram"></i></a>
         <a href="https://x.com/AlcaldiaItagui" class="text-white mx-3"><i class="bi bi-twitter-x"></i></a>
         <a href="https://www.youtube.com/@alcaldiaitagui1" class="text-white mx-3"><i class="bi bi-youtube"></i></a>
       </div>
+
+      <!-- ENLACES -->
       <div class="text-white-50">
-        <a href="https://itagui.gov.co/sitio/mapa_del_sitio" class="text-white-50 mx-2 text-decoration-none">Mapa del
-          Sitio</a> |
+        <a href="https://itagui.gov.co/sitio/mapa_del_sitio" class="text-white-50 mx-2 text-decoration-none">Mapa del Sitio</a> |
         <a href="https://itagui.gov.co/sitio/politicas" class="text-white-50 mx-2 text-decoration-none">Políticas</a> |
-        <a href="https://itagui.gov.co/sitio/mecanismos_contacto"
-          class="text-white-50 mx-2 text-decoration-none">Mecanismos de Contacto</a> |
-        <a href="https://itagui.gov.co/sitio/estadisticas"
-          class="text-white-50 mx-2 text-decoration-none">Estadísticas</a>
+        <a href="https://itagui.gov.co/sitio/mecanismos_contacto" class="text-white-50 mx-2 text-decoration-none">Mecanismos de Contacto</a> |
+        <a href="https://itagui.gov.co/sitio/estadisticas" class="text-white-50 mx-2 text-decoration-none">Estadísticas</a>
       </div>
+
       <p class="mt-3 mb-0 fw-bold">© 2025 Turismo Itagüí</p>
     </div>
   </footer>
+
+ 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
